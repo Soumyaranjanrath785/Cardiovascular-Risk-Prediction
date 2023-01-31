@@ -70,10 +70,9 @@ After training each model and tuning their hyper-parameters using grid search, I
 
 # Observation 
 
-* XGBoost, Support vector machine gives highest Accuracy, Recall, Precision and AUC score.
-* Highest recall is given by Support vector machine
-* Highest AUC is given by Support vector machine
-Overall we can say that the support vector machine was the best performing model across all metrics. It’s best parameters were a radial kernel, a C value of 10 and a gamma value of 1. Its high AUC and F1 score also show that the model has a high true positive rate and is thus sensitive to predict if one has a high risk of developing CHD , i.e., getting a heart attack within 10 years.
+* XGBoost, Randomforest gives highest Accuracy, Recall, Precision and AUC score.
+* Highest recall is given by rf model
+Overall we can say that the XGboost with hyperparameter tunning was the best performing model across all metrics. 
 
 # 5.CHALLENGES
 * Handling the missing values.
@@ -82,6 +81,6 @@ Overall we can say that the support vector machine was the best performing model
 # 6.CONCLUSION
 * The number of people who have Cardiovascular heart disease is almost equal between smokers and non-smokers.
 * The top features in predicting the ten year risk of developing Cardiovascular Heart Disease are 'age', 'totChol', 'sysBP', 'diaBP', 'BMI', 'heartRate', 'glucose'.
-* The Support vector machine with the radial kernel is the best performing model in terms of accuracy and the F1 score and Its high AUC-score shows that it has a high true positive rate.
+* The XG boost with hyperparameter tunning is the best performing model in terms of accuracy and the F1 score and Its high AUC-score shows that it has a high true positive rate.
 * Balancing the dataset by using the SMOTE technique helped in improving the models' sensitivity.
 * With more data(especially that of the minority class) better models can be built.
